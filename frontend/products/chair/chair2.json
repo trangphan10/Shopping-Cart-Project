@@ -1,0 +1,18 @@
+{
+    "CategoryID": "chair-123",
+    "ProductImages": [
+        {
+            "ID":"",
+            "Path": "./data/images/chair/chair2/i1.jpg"
+        },
+        {
+            "ID":"",
+            "Path": "./data/images/chair/chair2/i2.jpg"
+        }
+    ],
+    "Name": "chair 2",
+    "Price": "500",
+    "Weight": 1,
+    "Description": "A high-quality chair for people.",
+    "Status": 1
+}

@@ -1,0 +1,18 @@
+{
+    "CategoryID": "keyboard-123",
+    "ProductImages": [
+        {
+            "ID":"",
+            "Path": "./data/images/keyboard/keyboard1/keyboard_1_1.jpg"
+        },
+        {
+            "ID":"",
+            "Path": "./data/images/keyboard/keyboard1/keyboard_1_2.jpg"
+        }
+    ],
+    "Name": "keyboard 1",
+    "Price": "300",
+    "Weight": 0.1,
+    "Description": "A high-quality keyboard for people.",
+    "Status": 1
+}

@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: hello
+      tier: frontend
+      track: stable
+
+  template:
+    metadata:
+      labels:
+        app: hello
+        tier: frontend
+        track: stable
+    spec:
+      containers:
+      - name: nginx
+        image: frontend
+        # never pull the image policy
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80

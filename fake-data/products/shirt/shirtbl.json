@@ -1,0 +1,18 @@
+{
+    "CategoryID": "short-123",
+    "ProductImages": [
+        {
+            "ID":"",
+            "Path": "./data/images/shirt/shirtbl/shirtle1.jpg"
+        },
+        {
+            "ID":"",
+            "Path": "./data/images/shirt/shirtbl/shirtbl2.jpg"
+        }
+    ],
+    "Name": "shirtbe",
+    "Price": "550",
+    "Weight": 0.3,
+    "Description": "A high-quality shirt for people.",
+    "Status": 2
+}

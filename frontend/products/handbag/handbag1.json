@@ -1,0 +1,18 @@
+{
+    "CategoryID": "Handbag-VN00",
+    "ProductImages": [
+        {
+            "ID":"",
+            "Path": "./data/images/handbag/handbag1/tui_xach_marina.png"
+        },
+        {
+            "ID":"",
+            "Path": "./data/images/handbag/handbag1/tui_xach_marina2.png"
+        }
+    ],
+    "Name": "Marina Mini Handbag",
+    "Price": "2000",
+    "Weight": 0.6,
+    "Description": "A highend handbag from famous branch.",
+    "Status": 1
+}

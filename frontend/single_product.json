@@ -1,0 +1,48 @@
+[
+    {
+        "ID": "1c0cd1dc-16cb-401b-8147-f34b3aee3aac",
+        "CategoryID": "table-123",
+        "ProductImages": [
+            {
+                "ID": "294184af-a483-4b53-8844-4f53bafbdc8a",
+                "ProductID": "1c0cd1dc-16cb-401b-8147-f34b3aee3aac",
+                "Path": "../assets/products/f6.jpg",
+                "CreatedAt": "2023-12-16T18:33:03.308+07:00",
+                "UpdatedAt": "2023-12-16T18:33:03.308+07:00"
+            },
+            {
+                "ID": "428ab342-92f7-4662-b697-1b7cdf86bd28",
+                "ProductID": "1c0cd1dc-16cb-401b-8147-f34b3aee3aac",
+                "Path": "../assets/products/f5.jpg",
+                "CreatedAt": "2023-12-16T18:33:03.308+07:00",
+                "UpdatedAt": "2023-12-16T18:33:03.308+07:00"
+            },
+            {
+                "ID": "428ab342-92f7-4662-b697-1b7cdf86bd28",
+                "ProductID": "1c0cd1dc-16cb-401b-8147-f34b3aee3aac",
+                "Path": "../assets/products/f3.jpg",
+                "CreatedAt": "2023-12-16T18:33:03.308+07:00",
+                "UpdatedAt": "2023-12-16T18:33:03.308+07:00"
+            },
+            {
+                "ID": "428ab342-92f7-4662-b697-1b7cdf86bd28",
+                "ProductID": "1c0cd1dc-16cb-401b-8147-f34b3aee3aac",
+                "Path": "../assets/products/f2.jpg",
+                "CreatedAt": "2023-12-16T18:33:03.308+07:00",
+                "UpdatedAt": "2023-12-16T18:33:03.308+07:00"
+            }
+        ],
+        "Category": null,
+        "Sku": "",
+        "Name": "table 2",
+        "Price": "500",
+        "Stock": 0,
+        "Weight": "1",
+        "Description": "A high-quality table for people.",
+        "Status": 1,
+        "CreatedAt": "2023-12-16T18:33:03.308+07:00",
+        "UpdatedAt": "2023-12-16T18:33:03.308+07:00",
+        "DeletedAt": null
+    }
+
+]

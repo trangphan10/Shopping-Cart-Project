@@ -1,0 +1,18 @@
+{
+    "CategoryID": "trousers-123",
+    "ProductImages": [
+        {
+            "ID":"",
+            "Path": "./data/images/trousers/trouserswh/trouserswh1.jpg"
+        },
+        {
+            "ID":"",
+            "Path": "./data/images/trousers/trouserswh/trouserswh2.jpg"
+        }
+    ],
+    "Name": "trousers wh",
+    "Price": "470",
+    "Weight": 0.25,
+    "Description": "A high-quality shirt for people.",
+    "Status": 3
+}

@@ -1,0 +1,126 @@
+[
+    {
+        "ID": "1c0cd1dc-16cb-401b-8147-f34b3aee3aac",
+        "CategoryID": "table-123",
+        "ProductImages": [
+            {
+                "ID": "294184af-a483-4b53-8844-4f53bafbdc8a",
+                "ProductID": "1c0cd1dc-16cb-401b-8147-f34b3aee3aac",
+                "Path": "../assets/products/f5.jpg",
+                "CreatedAt": "2023-12-16T18:33:03.308+07:00",
+                "UpdatedAt": "2023-12-16T18:33:03.308+07:00"
+            },
+            {
+                "ID": "428ab342-92f7-4662-b697-1b7cdf86bd28",
+                "ProductID": "1c0cd1dc-16cb-401b-8147-f34b3aee3aac",
+                "Path": "../assets/products/f5.jpg",
+                "CreatedAt": "2023-12-16T18:33:03.308+07:00",
+                "UpdatedAt": "2023-12-16T18:33:03.308+07:00"
+            },
+            {
+                "ID": "428ab342-92f7-4662-b697-1b7cdf86bd28",
+                "ProductID": "1c0cd1dc-16cb-401b-8147-f34b3aee3aac",
+                "Path": "../assets/products/f3.jpg",
+                "CreatedAt": "2023-12-16T18:33:03.308+07:00",
+                "UpdatedAt": "2023-12-16T18:33:03.308+07:00"
+            },
+            {
+                "ID": "428ab342-92f7-4662-b697-1b7cdf86bd28",
+                "ProductID": "1c0cd1dc-16cb-401b-8147-f34b3aee3aac",
+                "Path": "../assets/products/f2.jpg",
+                "CreatedAt": "2023-12-16T18:33:03.308+07:00",
+                "UpdatedAt": "2023-12-16T18:33:03.308+07:00"
+            }
+        ],
+        "Category": null,
+        "Sku": "",
+        "Name": "table 2",
+        "Price": "500",
+        "Stock": 0,
+        "Weight": "1",
+        "Description": "A high-quality table for people.",
+        "Status": 1,
+        "CreatedAt": "2023-12-16T18:33:03.308+07:00",
+        "UpdatedAt": "2023-12-16T18:33:03.308+07:00",
+        "DeletedAt": null
+    },
+    {
+        "ID": "e403bcac-5d03-4511-8309-e665dcfb463b",
+        "CategoryID": "table-123",
+        "ProductImages": [
+            {
+                "ID": "8bf23521-9d5d-419f-968e-7290f9def3a4",
+                "ProductID": "e403bcac-5d03-4511-8309-e665dcfb463b",
+                "Path": "../assets/products/f5.jpg",
+                "CreatedAt": "2023-12-16T18:33:03.283+07:00",
+                "UpdatedAt": "2023-12-16T18:33:03.283+07:00"
+            },
+            {
+                "ID": "c0757d9e-adf8-4ecb-84a7-851359e9c296",
+                "ProductID": "e403bcac-5d03-4511-8309-e665dcfb463b",
+                "Path": "../assets/products/f2.jpg",
+                "CreatedAt": "2023-12-16T18:33:03.283+07:00",
+                "UpdatedAt": "2023-12-16T18:33:03.283+07:00"
+            },
+            {
+                "ID": "c0757d9e-adf8-4ecb-84a7-851359e9c296",
+                "ProductID": "e403bcac-5d03-4511-8309-e665dcfb463b",
+                "Path": "../assets/products/f2.jpg",
+                "CreatedAt": "2023-12-16T18:33:03.283+07:00",
+                "UpdatedAt": "2023-12-16T18:33:03.283+07:00"
+            }
+            
+        ],
+        "Category": null,
+        "Sku": "",
+        "Name": "table 1",
+        "Price": "599.99",
+        "Stock": 0,
+        "Weight": "0.5",
+        "Description": "A high-quality table.",
+        "Status": 1,
+        "CreatedAt": "2023-12-16T18:33:03.282+07:00",
+        "UpdatedAt": "2023-12-16T18:33:03.282+07:00",
+        "DeletedAt": null
+    },
+    {
+        "ID": "e403bcac-5d03-4511-8309-e665dcfb463b",
+        "CategoryID": "table-123",
+        "ProductImages": [
+            {
+                "ID": "8bf23521-9d5d-419f-968e-7290f9def3a4",
+                "ProductID": "e403bcac-5d03-4511-8309-e665dcfb463b",
+                "Path": "../assets/products/f2.jpg",
+                "CreatedAt": "2023-12-16T18:33:03.283+07:00",
+                "UpdatedAt": "2023-12-16T18:33:03.283+07:00"
+            },
+            {
+                "ID": "c0757d9e-adf8-4ecb-84a7-851359e9c296",
+                "ProductID": "e403bcac-5d03-4511-8309-e665dcfb463b",
+                "Path": "../assets/products/f2.jpg",
+                "CreatedAt": "2023-12-16T18:33:03.283+07:00",
+                "UpdatedAt": "2023-12-16T18:33:03.283+07:00"
+            },
+            {
+                "ID": "c0757d9e-adf8-4ecb-84a7-851359e9c296",
+                "ProductID": "e403bcac-5d03-4511-8309-e665dcfb463b",
+                "Path": "../assets/products/f2.jpg",
+                "CreatedAt": "2023-12-16T18:33:03.283+07:00",
+                "UpdatedAt": "2023-12-16T18:33:03.283+07:00"
+            }
+            
+        ],
+        "Category": null,
+        "Sku": "",
+        "Name": "table 1",
+        "Price": "599.99",
+        "Stock": 0,
+        "Weight": "0.5",
+        "Description": "A high-quality table.",
+        "Status": 1,
+        "CreatedAt": "2023-12-16T18:33:03.282+07:00",
+        "UpdatedAt": "2023-12-16T18:33:03.282+07:00",
+        "DeletedAt": null
+    }
+
+]

@@ -1,0 +1,18 @@
+{
+    "CategoryID": "mouse-123",
+    "ProductImages": [
+        {
+            "ID":"",
+            "Path": "./data/images/mouse/mouse2/mouse_2_1.jpg"
+        },
+        {
+            "ID":"",
+            "Path": "./data/images/mouse/mouse2/mouse_2_2.jpg"
+        }
+    ],
+    "Name": "mouse 2",
+    "Price": "400",
+    "Weight": 0.1,
+    "Description": "A high-quality mouse for people.",
+    "Status": 1
+}

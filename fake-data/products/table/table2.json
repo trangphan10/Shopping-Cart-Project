@@ -1,0 +1,18 @@
+{
+    "CategoryID": "table-123",
+    "ProductImages": [
+        {
+            "ID":"",
+            "Path": "./data/images/table/table2/i1.jpg"
+        },
+        {
+            "ID":"",
+            "Path": "./data/images/table/table2/i2.jpg"
+        }
+    ],
+    "Name": "table 2",
+    "Price": "500",
+    "Weight": 1,
+    "Description": "A high-quality table for people.",
+    "Status": 1
+}

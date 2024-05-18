@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="shortcut icon" href="../assets/icon.png" type="image/.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsiveHome.css" />
+    <link rel="stylesheet" href="../css/blog.css" />
+    <link rel="stylesheet" href="../css/shop.css" />
+    <link rel="stylesheet" href="../css/sign-in.css" />
+    <link rel="stylesheet" href="../css/sign-up.css" />
+    
+    <script src="../js/nav.js"></script>
+    <!-- <script defer src="../js/sign_valid.js"></script> -->
+
+  </head>
+<body>
+    <section id="header">
+        <a href="../index.html"><img src="../assets/logo.png" alt="logo" class="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a  href="../index.html">Home</a></li>
+                <li><a  href="../sub-pages/shop.html">Shop</a></li>
+                <li><a  href="../sub-pages/blog.html">Blog</a></li>
+                <!-- <li id="sign-in"><a href="./sub-pages/sign-in.html">Sign in</a></li>
+                <li id="sign-up"><a href="./sub-pages/sign-up.html">Sign up</a></li>
+                <li id="lg-user"><a href=""><i class="far fa-user"></i></a></li>
+                <li id="logout"><a href="">Logout</a></li> -->
+                <li class="lg-bag"><a href="../sub-pages/cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            
+            <a href="./sub-pages/cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i  id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+
+    <section id="signin">
+        <div class="container">
+          <form id="form" action="/">
+              <h1>Sign In</h1>
+              <div class="input-control">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="text">
+                  <div class="error"></div>
+              </div>
+            
+              <div class="input-control">
+                  <label for="password">Password</label>
+                  <input id="password" type="password">
+                  <div class="error"></div>
+              </div>
+              
+              <button id="submit" class="normal" type="button">Sign In</button>
+              <p id="login"></p>
+              <p id="local"></p>
+          </form>
+      </div>
+      </section>
+
+    <section id="page-header" class="about-header">
+        <h2>#KonowUs</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, consequuntur?</p>
+    </section>  
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="../assets/logo.png" alt="logo" class="logoS">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>562 Wellington Road, Street 32,san Freancisco</p>
+            <p><strong>Phone:</strong>+01 2222 3665 / (+91) 01 2345 6763</p>
+            <p><strong>Hours:</strong>10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Poilcy</a>
+            <a href="#">Terms & Condition</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account </h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My WishList</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="../assets/pay/app.jpg" alt="app">
+                <img src="../assets/pay/play.jpg" alt="play">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="../assets/pay/pay.png" alt="pay">
+        </div>
+        <div class="copyright">
+            <p>2023 , Tejas Nasre - HTML CSS JS Ecommerce Template</p>
+        </div>
+    </footer>
+   <script src="../js/responsiveHome.js"></script>
+   <script defer src="../js/sign_in.js"></script>
+   
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+    "CategoryID": "Handbag-VN00",
+    "ProductImages": [
+        {
+            "ID":"",
+            "Path": "./data/images/handbag/handbag2/tui_xach_xanh.png"
+        },
+        {
+            "ID":"",
+            "Path": "./data/images/handbag/handbag2/tui_xach_xanh2.png"
+        }
+    ],
+    "Name": "Medium Handbag",
+    "Price": "5000",
+    "Weight": 1.2,
+    "Description": "A highend handbag from famous branch.",
+    "Status": 3
+}

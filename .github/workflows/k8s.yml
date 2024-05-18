@@ -1,0 +1,158 @@
+name: K8s CI
+
+on:
+  push:
+    branches: [ "main", "tam-k8s-docker-CI-CD" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build-docker:
+    runs-on: ubuntu-latest
+    continue-on-error: false
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the backend Docker image
+      run: |
+        docker build -t backend-golang --target program .
+        docker build -t mysql-db --target db .
+      working-directory: ./backend
+    
+    - name: Build the frontend Docker image
+      run: |
+        docker build -t frontend .
+      working-directory: ./frontend
+
+    - name: Run docker compose to test
+      run : |
+        docker-compose up -d
+
+
+    
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+
+    - name: Install library 
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+    - name: run fake data
+      run: |
+        python3 fake.py
+      working-directory: ./fake-data
+
+    - name: run test case
+      run : |
+        python3 -m unittest tests.test_user
+        python3 -m unittest tests.test_category
+        python3 -m unittest tests.test_product
+        python3 -m unittest tests.test_cart
+
+      working-directory: ./test_case
+
+
+    - name: Stop docker compose
+      run : |
+        docker compose stop
+
+  build-k8s:
+    needs: build-docker
+    runs-on: ubuntu-latest
+    continue-on-error: false
+    steps:
+        - uses: actions/checkout@v3
+        - run: sudo snap install microk8s --classic
+        - run: |
+            sudo usermod -a -G microk8s runner 
+            sudo microk8s enable registry
+        - run: sudo microk8s status --wait-ready
+        - run: sudo microk8s kubectl config view
+        - name: Build the backend Docker image
+          run: |
+            docker build -t backend-golang --target program .
+            docker build -t mysql-db --target db .
+          working-directory: ./backend
+
+        - name: Build the frontend Docker image
+          run: |
+            docker build -t frontend .
+          working-directory: ./frontend
+    
+
+        - name: move container local to microk8s
+          run: |
+            sudo docker save frontend > myimage.tar
+            sudo microk8s ctr image import myimage.tar
+            sudo docker save backend-golang > myimage.tar
+            sudo microk8s ctr image import myimage.tar
+            sudo docker save mysql-db > myimage.tar
+            sudo microk8s ctr image import myimage.tar
+            sudo microk8s ctr images ls
+
+        - name: Run k8s
+          run: |
+            sudo microk8s kubectl apply -f backend/database-deployment.yaml 
+            sudo microk8s kubectl apply -f backend/database-service.yaml 
+            sudo microk8s kubectl apply -f backend/backend-deployment.yaml 
+            sudo microk8s kubectl apply -f backend/backend-service.yaml 
+            sudo microk8s kubectl apply -f frontend/frontend-deployment.yaml 
+            sudo microk8s kubectl apply -f frontend/frontend-service.yaml 
+        
+        
+        - name: test k8s
+          run : |
+            sudo microk8s kubectl get svc 
+        - name: test pod
+          run : |
+            sudo microk8s kubectl get po -o wide
+        - name: test k8s
+          run : |
+            sudo microk8s kubectl get deployments
+        - name: test k8s
+          run : |
+            sudo microk8s kubectl get services
+        
+        - run: sudo microk8s kubectl describe pods 
+
+        - run: docker images
+
+        - name: Set up Python 3.10
+          uses: actions/setup-python@v3
+          with:
+            python-version: "3.10"
+
+        - name: Install library 
+          run: |
+            python -m pip install --upgrade pip
+            if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        
+        - name: check pod
+          run: |
+            sudo microk8s kubectl get pods
+        - name: get log of a pod
+          run: |
+            sudo microk8s kubectl logs --selector=tier=frontend -c nginx
+            sudo microk8s kubectl logs --selector=tier=backend -c back-go
+            sudo microk8s kubectl logs --selector=app=database-mysql -c database-mysql
+        - name: test k8s
+          run : |
+            python3 test_k8s.py
+
+        - name: get log of a pod
+          run: |
+            sudo microk8s kubectl logs --selector=tier=frontend -c nginx
+            sudo microk8s kubectl logs --selector=tier=backend -c back-go
+            sudo microk8s kubectl logs --selector=app=database-mysql -c database-mysql
+        - name: check pod
+          run: |
+            sudo microk8s kubectl get pods
+
+        - name: Stop k8s
+          run: |
+            sudo microk8s kubectl delete service --all
+            sudo microk8s kubectl delete deployment --all
+      

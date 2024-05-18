@@ -1,0 +1,35 @@
+services:
+
+  backend-service:
+    image: "backend-golang:latest"
+    ports:
+      - 9000:9000
+
+    networks:
+      - frontend-backend-network
+      - backend-db-network
+
+    depends_on:
+      database-service:
+        condition : service_healthy
+
+    
+  database-service:
+    image: "mysql-db:latest"
+    ports:
+      - 3306
+    
+    networks:
+      - backend-db-network
+
+    healthcheck:
+      test: ["CMD", "echo", "112345"]
+      interval: 60s
+      timeout: 60s
+      retries: 1
+
+networks:
+  frontend-backend-network:
+  backend-db-network:
+
+    
